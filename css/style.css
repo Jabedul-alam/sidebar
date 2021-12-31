@@ -1,0 +1,36 @@
+h1,h2,h3,h4,h5,
+p,span ul{
+    margin: 0;
+    padding: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.sidebar{
+    background-color: gold;
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    margin-left: -200px;
+    transition: all linear .5s;
+}
+#side_menu.active{
+    margin-left: 0;
+}
+.main_content{
+    background-color: black;
+    color: gold;
+    padding-top: 50px;
+}
+#menu_toggle{
+    position: fixed;
+    left: 10px;
+    transition: all linear .5s;
+}
+#side_menu.active #menu_toggle{
+    left: 200px;
+}
